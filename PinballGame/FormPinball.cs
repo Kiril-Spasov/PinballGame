@@ -21,6 +21,28 @@ namespace PinballGame
         //Our pinball machine has 6 pockets.
         //We would like to know how many balls end up in each pocket
         //after a large number of trials.
+        //
+        //              |
+        //              V
+        //------------------------- Level 1
+        //              *
+        //------------------------- Level 2
+        //            *   *
+        //------------------------- Level 3
+        //          *   *   *
+        //------------------------- Level 4
+        //        *   *   *   *
+        //------------------------- Level 5
+        //      *   *   *   *   *
+        //------------------------- Level 6
+        //    *   *   *   *   *   *
+        //| 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+
+        //At every level the ball has only 2 possibilities,
+        //to fall on right on left.
+        //We start at pos 4 since it's right in the middle and
+        //at every level we add or deduct 0.5;
+
         private void BtnStart_Click(object sender, EventArgs e)
         {
             int[] frequency = new int[8];
